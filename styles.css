@@ -19,17 +19,17 @@ body {
 
 /* PORTRAIT MOBILE PHONES */
 @media only screen and (max-width: 600px) {
-    .container {
+    .menu-container {
         overflow: hidden;
         background-color: black;
         position: relative;
     }
 
-    .container #menu {
+    .menu-container #menu {
         display: none;
     }
 
-    .container a {
+    .menu-container a {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
@@ -37,14 +37,14 @@ body {
         display: block;
     }
 
-    .container a.icon {
+    .menu-container a.icon {
         display: block;
         position: fixed;
         right: 0;
         top: 0;
     }
 
-    .container ul {
+    .menu-container ul {
         list-style: none;
         margin: 0;
         padding: 10px;
@@ -55,12 +55,12 @@ body {
         padding-bottom: 0;
     }
 
-    .container a:hover {
+    .menu-container a:hover {
         background-color: #ddd;
         color: black;
     }
 
-    .container li:hover {
+    .menu-container li:hover {
         background-color: #ddd;
         color: black;
     }
@@ -79,7 +79,7 @@ body {
 /* LAPTOP, DESKTOP, LANDSCAPE TABLETS */
 @media only screen and (min-width: 600px) {
 
-    .container {
+    .menu-container {
         background-color: black;
     }
     
@@ -89,7 +89,7 @@ body {
         height: auto;
     }
     
-    .container ul {
+    .menu-container ul {
         margin: 0;
         padding: 10px;
         padding-left: 0;
@@ -102,12 +102,12 @@ body {
         padding-bottom: 0;
     }
     
-    .container li:hover {
+    .menu-container li:hover {
         background-color: #F76902;
         text-decoration: underline;
     }
 
-    .container a {
+    .menu-container a {
         text-decoration: none;
         color: white;
         font-size: 12pt;
@@ -115,7 +115,7 @@ body {
         height: 30px;
     }
 
-    .container li {
+    .menu-container li {
         padding: 10px;
         display: inline;
         position: relative;
