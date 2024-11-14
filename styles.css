@@ -126,31 +126,71 @@ body:has(.side-menu:checked) {
   overflow: hidden;
 }
 
-#intro {
-    font-family: Consolas, monaco, monospace;
+#intro h1{
+    font-family: "JetBrains Mono";
+    text-decoration: none;
+    font-weight: normal;
 }
 
 #name {
     color: #785db2;
 }
 
+.type-flex {
+    display: flex;
+}
+
+.typewriter {
+    color: #4c4c4c;
+}
+
+#typing-text {
+    color:#2193cc;
+    border-right: 2px solid #2193cc;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 /* PORTRAIT MOBILE PHONES */
 @media only screen and (max-width: 600px) {
-    #intro {
-        font-family: Consolas, monaco, monospace;
+    #intro h1{
         padding: 30px;
         font-size: 2em;
+    }
+
+    .type-flex {
+        padding-left: 30px;
+    }
+
+    .typewriter {
+        font-size: 1.2em;
     }
 }
 
 /* LAPTOP, DESKTOP, LANDSCAPE TABLETS */
 @media only screen and (min-width: 600px) {
-    #intro {
-        font-family: Consolas, monaco, monospace;
+    #intro h1{
         padding: 30px;
         padding-left: 100px;
         padding-top: 100px;
         font-size: 4em;
+    }
+
+    .type-flex {
+        padding-left: 100px;
+    }
+
+    .typewriter {
+        font-size: 2em;
     }
 
     .nav{
