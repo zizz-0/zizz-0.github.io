@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" type="image/x-icon"  href="images/logo.png"> -->
+    <link rel="icon" type="image/x-icon"  href="assets/z-logo-small.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Zoe Rizzo</title>
@@ -17,31 +17,32 @@
 </head>
 
 <body>
-    <div class="menu-container">
-        <div id="menu">
-            <ul>
-                <a href="index.html" id="menu-item"><li>Home</li></a>
-                <a href="index.html#projects" id="menu-item"><li>Projects</li></a>
-                <a href="index.html#experience" id="menu-item"><li>Experience</li></a>
-                <a href="index.html#contact" id="menu-item"><li>Contact</li></a>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="assets/z-logo-small-light.png" width="50px"></a>
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#experience">experience</a> </li>
+                <li><a href="#contact">contact</a></li>
             </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="intro">
+            <span>hi, my name is </span><span id="name"> zoe.</span>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <div id="header">
-        <h1>Hi, I'm Zoe.</h1>
-    </div>
-    <div id="projects">
-
-    </div>
-    <div id="experience">
-
-    </div>
-    <div id="contact">
-
-    </div>
+        <div id="projects">
+    
+        </div>
+        <div id="experience">
+    
+        </div>
+        <div id="contact">
+    
+        </div>
+    </main>
 </body>
 
 <script>
