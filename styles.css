@@ -163,16 +163,8 @@ body:has(.side-menu:checked) {
     animation: blink 0.7s step-end infinite;
 }
 
-.links ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 50px;
-    padding-left: 30px;
-}
-
-.links li {
-    padding-right: 20px;
+.about-me {
+    padding: 30px;
 }
 
 .intro-flex {
@@ -305,7 +297,8 @@ body:has(.side-menu:checked) {
         display: none;
     }
 
-    .links ul {
+    .about-me {
         padding-left: 100px;
+        width: 75%;
     }
 }
