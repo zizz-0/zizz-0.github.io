@@ -184,6 +184,7 @@ body:has(.side-menu:checked) {
 
 .about-me {
     padding: 30px;
+    color: #3a3a3a;
 }
 
 @keyframes blink {
