@@ -223,7 +223,11 @@ body:has(.side-menu:checked) {
     }
 
     .nav ul {
-        margin-left: 15px;
+        width: 100%;
+    }
+
+    .nav a {
+        padding-left: 30px;
     }
 
     .side-menu:checked ~ nav{
