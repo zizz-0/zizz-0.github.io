@@ -31,22 +31,35 @@ ul {
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
     background-color: var(--bluegray);
     box-shadow: 1px 1px 5px 0px var(--gray);
     position: sticky;
     top: 0;
     width: 100%;
     height: 90px;
+    z-index: 5;
 }
 
 .logo {
-    display: inline-block;
+    display: flex;
     padding: 15px;
     align-items: center;
 }
 
+.logo span {
+    align-items: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--white);
+    font-family: "JetBrains Mono";
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
 .icons {
-    display: inline-block;
+    display: flex;
     padding: 15px;
     padding-left: 10px;
     padding-right: 10px;
@@ -54,11 +67,15 @@ ul {
 }
 
 .nav{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
     width: 100%;
     height: 100%;
     position: fixed;
     background-color: var(--bluegray);
     overflow: hidden;
+    z-index: 10;
 }
 
 .menu a{
@@ -78,9 +95,14 @@ ul {
 }
 
 .hamb{
+    display: flex;
     cursor: pointer;
+    align-items: flex-end;
+    justify-self: end;
+    margin-left: auto;
     float: right;
     padding: 40px 20px;
+    z-index: 20;
 }
 
 .hamb-line {
@@ -167,70 +189,6 @@ body:has(.side-menu:checked) {
     padding: 30px;
 }
 
-.intro-flex {
-    display: flex;
-    flex-direction: row;
-}
-
-#intro {
-    width: 75%;
-}
-
-#intro-pic {
-    margin-top: 75px;
-    margin-right: 150px;
-}
-
-.circle-img-big {
-    justify-content: center;
-    display: flex;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.circle-img-big img {
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
-}
-
-.dodger-flex {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.circle-img-small {
-    justify-content: center;
-    display: flex;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.circle-img-small img {
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
-}
-
-#dodger {
-    background-color: var(--bluegray);
-    padding: 20px;
-    border-radius: 50px;
-    color: #e5e5e5;
-    font-size: 14px;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 10px;
-    position: relative;
-    display: inline-block;
-    max-width: 150px;
-}
-
 @keyframes blink {
     50% {
         border-color: transparent;
@@ -244,6 +202,11 @@ body:has(.side-menu:checked) {
         font-size: 2em;
     }
 
+    .logo span {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
     .type-flex {
         padding-left: 30px;
     }
@@ -254,6 +217,73 @@ body:has(.side-menu:checked) {
 
     .links ul img {
         width: 40px;
+    }
+
+    .intro-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #intro-pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #intro {
+        width: 100%;
+    }
+
+    .circle-img-big {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    .circle-img-big img {
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+    }
+    
+    .dodger-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .circle-img-small {
+        justify-content: center;
+        display: flex;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    .circle-img-small img {
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+    }
+    
+    #dodger {
+        background-color: var(--bluegray);
+        padding: 20px;
+        border-radius: 50px;
+        color: #e5e5e5;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 10px;
+        /* position: relative; */
+        /* display: inline-block; */
+        max-width: 150px;
     }
 }
 
@@ -300,5 +330,69 @@ body:has(.side-menu:checked) {
     .about-me {
         padding-left: 100px;
         width: 75%;
+    }
+
+    .intro-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #intro {
+        width: 75%;
+    }
+    
+    #intro-pic {
+        margin-top: 75px;
+        margin-right: 150px;
+    }
+    
+    .circle-img-big {
+        justify-content: center;
+        display: flex;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    .circle-img-big img {
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+    }
+    
+    .dodger-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .circle-img-small {
+        justify-content: center;
+        display: flex;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    .circle-img-small img {
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+    }
+    
+    #dodger {
+        background-color: var(--bluegray);
+        padding: 20px;
+        border-radius: 50px;
+        color: #e5e5e5;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 10px;
+        position: relative;
+        display: inline-block;
+        max-width: 150px;
     }
 }
