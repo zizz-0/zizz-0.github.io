@@ -22,15 +22,15 @@ body {
     display: table;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.header{
+.header {
     background-color: var(--bluegray);
     box-shadow: 1px 1px 5px 0px var(--gray);
     position: sticky;
@@ -39,9 +39,18 @@ ul{
     height: 90px;
 }
 
-.logo{
+.logo {
     display: inline-block;
     padding: 15px;
+    align-items: center;
+}
+
+.icons {
+    display: inline-block;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
 }
 
 .nav{
@@ -164,6 +173,70 @@ body:has(.side-menu:checked) {
 
 .links li {
     padding-right: 20px;
+}
+
+.intro-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#intro {
+    width: 75%;
+}
+
+#intro-pic {
+    margin-top: 75px;
+    margin-right: 150px;
+}
+
+.circle-img-big {
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circle-img-big img {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.dodger-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.circle-img-small {
+    justify-content: center;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circle-img-small img {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+#dodger {
+    background-color: var(--bluegray);
+    padding: 20px;
+    border-radius: 50px;
+    color: #e5e5e5;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    max-width: 150px;
 }
 
 @keyframes blink {
