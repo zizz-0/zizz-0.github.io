@@ -285,6 +285,14 @@ body:has(.side-menu:checked) {
         /* display: inline-block; */
         max-width: 150px;
     }
+
+    .logo span {
+        font-size: 1em;
+    }
+
+    .icons img {
+        width: 30px;
+    }
 }
 
 /* LAPTOP, DESKTOP, LANDSCAPE TABLETS */
