@@ -154,6 +154,18 @@ body:has(.side-menu:checked) {
     animation: blink 0.7s step-end infinite;
 }
 
+.links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.links li {
+    padding-right: 20px;
+}
+
 @keyframes blink {
     50% {
         border-color: transparent;
@@ -174,6 +186,10 @@ body:has(.side-menu:checked) {
     .typewriter {
         font-size: 1.2em;
     }
+
+    .links ul img {
+        width: 40px;
+    }
 }
 
 /* LAPTOP, DESKTOP, LANDSCAPE TABLETS */
@@ -187,6 +203,7 @@ body:has(.side-menu:checked) {
 
     .type-flex {
         padding-left: 100px;
+        padding-top: 50px;
     }
 
     .typewriter {
@@ -213,5 +230,9 @@ body:has(.side-menu:checked) {
 
     .hamb{
         display: none;
+    }
+
+    .links ul {
+        padding-left: 100px;
     }
 }
