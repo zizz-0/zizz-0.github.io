@@ -95,6 +95,7 @@ ul {
 
 .hamb {
     display: flex;
+    align-items: center;
     cursor: pointer;
     margin-left: auto;
     padding: 30px 20px;
@@ -303,15 +304,14 @@ body:has(.side-menu:checked) {
     #dodger {
         background-color: var(--bluegray);
         padding: 20px;
-        border-radius: 50px;
+        border-radius: 80px;
         color: #e5e5e5;
         font-size: 14px;
         text-align: center;
         margin-top: 50px;
         margin-left: 10px;
-        /* position: relative; */
-        /* display: inline-block; */
-        max-width: 150px;
+        font-size: 0.7em;
+        max-width: 100px;
     }
 
     .logo span {
