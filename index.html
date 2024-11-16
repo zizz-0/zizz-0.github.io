@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon"  href="assets/z-logo-small.png">
+    <link rel="icon" type="image/x-icon"  href="assets/logos/z-logo-small.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
@@ -19,17 +19,17 @@
 
 <body>
     <header class="header">
-        <a href="index.html" class="logo"><img src="assets/z-logo-small-light.png" width="50px"><span>Zoe Rizzo</span></a>
-        <a href="https://www.linkedin.com/in/zoe-rizzo/" target="_blank" class="icons"><img src="assets/linkedin.png" width="40px"></a>
-        <a href="https://github.com/zizz-0" target="_blank" class="icons"><img src="assets/github.png" width="40px"></a>
-        <a href="mailto: rizzo.zoej@gmail.com" target="_blank" class="icons"><img src="assets/gmail.png" width="40px"></a>
+        <a href="index.html" class="logo"><img src="assets/logos/z-logo-small-light.png" width="50px"><span>Zoe Rizzo</span></a>
+        <a href="https://www.linkedin.com/in/zoe-rizzo/" target="_blank" class="icons"><img src="assets/logos/linkedin.png" width="40px"></a>
+        <a href="https://github.com/zizz-0" target="_blank" class="icons"><img src="assets/logos/github.png" width="40px"></a>
+        <a href="mailto: rizzo.zoej@gmail.com" target="_blank" class="icons"><img src="assets/logos/gmail.png" width="40px"></a>
         <input class="side-menu" type="checkbox" id="side-menu"/>
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         <nav class="nav">
             <ul class="menu">
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#experience">experience</a> </li>
+                <li><a href="#projects" onclick="closeMenu()">projects</a></li>
+                <li><a href="#skills" onclick="closeMenu()">skills</a></li>
+                <li><a href="#experience" onclick="closeMenu()">experience</a> </li>
             </ul>
         </nav>
     </header>
@@ -44,7 +44,7 @@
                     <script src="script.js"></script>
                 </div>
                 <div class="about-me">
-                    I am a Software Engineering student dedicated to <b>creating efficient solutions with intuitive user experiences.</b> My coding experience ranges from web development to robotics, allowing me to build valuable skills surrounding both functionality and usability.
+                    <p>I am a Software Engineering student dedicated to <b>creating efficient solutions with intuitive user experiences.</b> My coding experience ranges from web development to robotics, allowing me to build valuable skills surrounding both functionality and usability.</p>
                 </div>
             </div>
             <div id="intro-pic">
@@ -61,12 +61,68 @@
         </div>
         
         <div id="projects">
+            <h1>my projects</h1>
+            <div class="projects-flex">
+                <div class="project-desc">
+                    <div class="project-title-flex">
+                        <h2>Project W.A.R.D.E.N.</h2>
+                        <a href="https://github.com/njii-comet-2024/WARDEN" target="_blank" class="icons"><img src="assets/logos/github-dark.png" width="40px"></a>
+                    </div>
+                    <p><b>Wireless Assessment Rover with Drone Extended Network:</b> a 6-week long project completed during my internship at <a href="">NJII COMET</a>. Reconnaissance system built for a dense jungle environment with obstructed signal. Led the software team to create control and communication code. Implemented LAN network communication, using the drone as a range extender for the ground vehicle. Used an NVIDIA Jetson Orin Nano to implement object detection using DetectNet and PlantNet-300K.</p>
+                    <br>
+                    <span>Python</span><span>C++</span><span>Raspberry Pi</span><span>OpenCV</span>
+                </div>
+                <div class="project-img">
+                    <img src="assets/projects/WARDEN.jpg">
+                </div>
+            </div>
+            <div class="projects-flex">
+                <div class="project-desc">
+                    <div class="project-title-flex">
+                        <h2>Wikipedia Race</h2>
+                        <a href="https://github.com/zizz-0/Wiki-Race" target="_blank" class="icons"><img src="assets/logos/github-dark.png" width="40px"></a>
+                    </div>
+                    <p>Finds the shortest path from one wikipedia article to another using hyperlinks. Uses A* Search with title overlap heuristic and multi-threading to optimize search time. Outputs a visualized graph with the closest 300 nodes along with search time, number of articles searched, and the final path.</p>
+                    <br>
+                    <span>Python</span><span>NetworkX</span><span>Matplotlib</span>
+                </div>
+                <div class="project-img">
+                    <img src="assets/projects/wikirace.png">
+                </div>
+            </div>
+            <div class="projects-flex">
+                <div class="project-desc">
+                    <div class="project-title-flex">
+                        <h2>U-Fund Donations Board</h2>
+                        <a href="https://github.com/zizz-0/SWEN-261" target="_blank" class="icons"><img src="assets/logos/github-dark.png" width="40px"></a>
+                    </div>
+                    <p>A non-profit donations board where users can select specific needs to add to their cart and checkout. Includes user authentication, different types of users, and account creation, edit, and deletion. Implemented a leaderboard to rank users based on their donations.</p>
+                    <br>
+                    <span>Java</span><span>Angular</span><span>REST</span><span>SonarQube</span><span>OpenUP</span><span>Scrum</span>
+                </div>
+                <div class="project-img">
+                    <img src="assets/projects/ufund.png">
+                </div>
+            </div>
+            <div class="projects-flex">
+                <div class="project-desc">
+                    <div class="project-title-flex">
+                        <h2>VEX Scoring Calculator</h2>
+                        <a href="https://github.com/cowsed/High-Stakes-Scoring" target="_blank" class="icons"><img src="assets/logos/github-dark.png" width="40px"></a>
+                    </div>
+                    <p>A web-based scoring calculator for the VEX Robotics challenge High Stakes. Built as a more user friendly and scoring accurate alternative to the official V5RC Hub app calculator.</p>
+                    <br>
+                    <span>JavaScript</span><span>HTML</span><span>CSS</span><span>GitHub Pages</span>
+                </div>
+                <div class="project-img">
+                    <img src="assets/projects/vexscoring.png">
+                </div>
+            </div>
+        </div>
+        <div id="skills">
     
         </div>
         <div id="experience">
-    
-        </div>
-        <div id="contact">
     
         </div>
     </main>
@@ -80,6 +136,10 @@
         } else {
           x.style.display = "block";
         }
+    }
+
+    function closeMenu() {
+        document.getElementById("side-menu").checked = false;
     }
 </script>
 
